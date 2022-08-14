@@ -11,6 +11,10 @@
 		FC1BBF0F28A9432400A0FB3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF0E28A9432400A0FB3F /* ContentView.swift */; };
 		FC1BBF1128A9432C00A0FB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1BBF1028A9432C00A0FB3F /* Assets.xcassets */; };
 		FC1BBF1428A9432C00A0FB3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1BBF1328A9432C00A0FB3F /* Preview Assets.xcassets */; };
+		FC1BBF1E28A9437200A0FB3F /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF1D28A9437200A0FB3F /* Webservice.swift */; };
+		FC1BBF2028A9443600A0FB3F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF1F28A9443600A0FB3F /* UserModel.swift */; };
+		FC1BBF2228A9447400A0FB3F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2128A9447400A0FB3F /* UserViewModel.swift */; };
+		FC1BBF2528A9475800A0FB3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2428A9475800A0FB3F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		FC1BBF0E28A9432400A0FB3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC1BBF1028A9432C00A0FB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1BBF1328A9432C00A0FB3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FC1BBF1D28A9437200A0FB3F /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		FC1BBF1F28A9443600A0FB3F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FC1BBF2128A9447400A0FB3F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		FC1BBF2428A9475800A0FB3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 		FC1BBF0B28A9432400A0FB3F /* NetworkServiceSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FC1BBF2328A9474D00A0FB3F /* Constants */,
+				FC1BBF1C28A9435F00A0FB3F /* ViewModel */,
+				FC1BBF1B28A9435700A0FB3F /* Model */,
+				FC1BBF1A28A9434A00A0FB3F /* Service */,
 				FC1BBF0C28A9432400A0FB3F /* NetworkServiceSwiftUIApp.swift */,
 				FC1BBF0E28A9432400A0FB3F /* ContentView.swift */,
 				FC1BBF1028A9432C00A0FB3F /* Assets.xcassets */,
@@ -65,6 +77,38 @@
 				FC1BBF1328A9432C00A0FB3F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FC1BBF1A28A9434A00A0FB3F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BBF1D28A9437200A0FB3F /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FC1BBF1B28A9435700A0FB3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BBF1F28A9443600A0FB3F /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC1BBF1C28A9435F00A0FB3F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BBF2128A9447400A0FB3F /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC1BBF2328A9474D00A0FB3F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FC1BBF2428A9475800A0FB3F /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +183,10 @@
 			files = (
 				FC1BBF0F28A9432400A0FB3F /* ContentView.swift in Sources */,
 				FC1BBF0D28A9432400A0FB3F /* NetworkServiceSwiftUIApp.swift in Sources */,
+				FC1BBF2028A9443600A0FB3F /* UserModel.swift in Sources */,
+				FC1BBF2228A9447400A0FB3F /* UserViewModel.swift in Sources */,
+				FC1BBF1E28A9437200A0FB3F /* Webservice.swift in Sources */,
+				FC1BBF2528A9475800A0FB3F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
