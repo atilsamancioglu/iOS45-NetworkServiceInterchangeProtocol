@@ -15,6 +15,9 @@
 		FC1BBF2028A9443600A0FB3F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF1F28A9443600A0FB3F /* UserModel.swift */; };
 		FC1BBF2228A9447400A0FB3F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2128A9447400A0FB3F /* UserViewModel.swift */; };
 		FC1BBF2528A9475800A0FB3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2428A9475800A0FB3F /* Constants.swift */; };
+		FC1BBF2728A94A7000A0FB3F /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = FC1BBF2628A94A7000A0FB3F /* users.json */; };
+		FC1BBF2928A94A9500A0FB3F /* Localservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2828A94A9500A0FB3F /* Localservice.swift */; };
+		FC1BBF2B28A94AA900A0FB3F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BBF2A28A94AA900A0FB3F /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		FC1BBF1F28A9443600A0FB3F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FC1BBF2128A9447400A0FB3F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		FC1BBF2428A9475800A0FB3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC1BBF2628A94A7000A0FB3F /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		FC1BBF2828A94A9500A0FB3F /* Localservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localservice.swift; sourceTree = "<group>"; };
+		FC1BBF2A28A94AA900A0FB3F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		FC1BBF0B28A9432400A0FB3F /* NetworkServiceSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FC1BBF2628A94A7000A0FB3F /* users.json */,
 				FC1BBF2328A9474D00A0FB3F /* Constants */,
 				FC1BBF1C28A9435F00A0FB3F /* ViewModel */,
 				FC1BBF1B28A9435700A0FB3F /* Model */,
@@ -83,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				FC1BBF1D28A9437200A0FB3F /* Webservice.swift */,
+				FC1BBF2828A94A9500A0FB3F /* Localservice.swift */,
+				FC1BBF2A28A94AA900A0FB3F /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1BBF2728A94A7000A0FB3F /* users.json in Resources */,
 				FC1BBF1428A9432C00A0FB3F /* Preview Assets.xcassets in Resources */,
 				FC1BBF1128A9432C00A0FB3F /* Assets.xcassets in Resources */,
 			);
@@ -181,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1BBF2928A94A9500A0FB3F /* Localservice.swift in Sources */,
 				FC1BBF0F28A9432400A0FB3F /* ContentView.swift in Sources */,
+				FC1BBF2B28A94AA900A0FB3F /* NetworkService.swift in Sources */,
 				FC1BBF0D28A9432400A0FB3F /* NetworkServiceSwiftUIApp.swift in Sources */,
 				FC1BBF2028A9443600A0FB3F /* UserModel.swift in Sources */,
 				FC1BBF2228A9447400A0FB3F /* UserViewModel.swift in Sources */,

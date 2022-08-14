@@ -12,6 +12,7 @@ struct Constants {
     struct UserResources {
         
         //https://jsonplaceholder.typicode.com/users
+        //https://raw.githubusercontent.com/atilsamancioglu/UsersJSONPlaceHolder/main/users.json
         static let baseUrl = "jsonplaceholder.typicode.com"
         static let usersExtension = "users"
         

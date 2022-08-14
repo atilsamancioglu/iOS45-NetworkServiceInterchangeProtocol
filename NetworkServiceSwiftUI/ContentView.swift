@@ -12,7 +12,7 @@ struct ContentView: View {
     @ObservedObject var userListViewModel : UserListViewModel
     
     init() {
-              self.userListViewModel = UserListViewModel()
+        self.userListViewModel = UserListViewModel(service: Localservice())
         }
 
     var body: some View {
