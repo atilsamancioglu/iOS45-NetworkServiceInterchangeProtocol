@@ -13,37 +13,25 @@ struct ContentView: View {
     
     init() {
         self.userListViewModel = UserListViewModel(service: Localservice())
-        }
-
+    }
+    
     var body: some View {
-        List(userListViewModel.userList,id:\.id) { user in
-      
-            VStack{
-
+        List(userListViewModel.userList,id: \.id) { user in
+            VStack {
                 Text(user.name)
                     .font(.title3)
                     .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
+                    .frame(maxWidth: .infinity, alignment:.leading)
                 Text(user.username)
                     .foregroundColor(.green)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-
+                    .frame(maxWidth: .infinity, alignment:.leading)
                 Text(user.email)
                     .foregroundColor(.black)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .frame(maxWidth: .infinity, alignment:.leading)
             }
-        
+        }.task {
+            await userListViewModel.downloadUsers()
         }
-        
-    .task{
-        
-        await userListViewModel.downloadUsers()
-      
-    }
-    
-  
-
     }
 }
 

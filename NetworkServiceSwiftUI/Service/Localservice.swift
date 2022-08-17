@@ -7,17 +7,19 @@
 
 import Foundation
 
-class Localservice: NetworkService {
-    
-    func download(_ resourceName: String) async throws -> [User] {
+class Localservice : NetworkService {
+    var type: String = "Localservice"
+
+    func download(_ resource: String) async throws -> [User] {
         
-        guard let path = Bundle.main.path(forResource: resourceName, ofType: "json") else {
-            fatalError("Resource file \(resourceName) not found!")
+        guard let path = Bundle.main.path(forResource: resource, ofType: "json") else {
+            fatalError("Resource not found")
         }
         
-        let data = try Data(contentsOf: URL(fileURLWithPath: path))
-        let userModel = try JSONDecoder().decode([User].self, from: data)
-        return userModel
+        let data = try Data(contentsOf: URL(filePath: path))
+        
+        return try JSONDecoder().decode([User].self, from: data)
+        
     }
     
 }
